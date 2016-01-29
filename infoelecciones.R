@@ -42,7 +42,7 @@ joined <- left_join(joined, ele_sec)
 
 #rm(joined)
 
-write.dbf(as.data.frame(joined), "./output.dbf") ## Archivo con todos los campos (para la base de datos)
+#write.dbf(as.data.frame(joined), "./output.dbf") ## Archivo con todos los campos (para la base de datos)
 
 descriptores
 
@@ -54,3 +54,11 @@ nvo <- summarise(grouped, sum(POBTOT) , sum(PRI, na.rm = T), sum(PAN, na.rm = T)
 names(nvo) <- c("DISTRITO", "POBTOT", "PRI", "PAN", "TOTAL_VOTOS")
 
 
+library(rattle)
+rattle()
+
+
+ratt <- as.data.frame(joined)
+  
+  
+  
