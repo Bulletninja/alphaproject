@@ -1,4 +1,4 @@
-vs <- c("PAN", "OTRO", "PT", "PRD", "NUEVA_ALIA")
+vs <- c("PAN", "OTRO")
 vars <- names(dataset)[which(names(dataset)!="GANADOR")]
 p <- length(vs)
 v <- length(vars)

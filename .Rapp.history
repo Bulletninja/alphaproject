@@ -1,0 +1,6 @@
+load("/Users/luis/Code/Pablo/alphaproject/extendido.RData")
+extendido
+mydata
+mydata2
+names(mydata2)
+quit()
