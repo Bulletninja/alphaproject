@@ -4,3 +4,56 @@ mydata
 mydata2
 names(mydata2)
 quit()
+load("/Users/luis/Code/Pablo/alphaproject/simplificado_por_predictores.RData")
+mydata
+mydata2
+mydata3
+names(mydata3)
+str(split)
+x <- c(rnorm(10), runif(10), rnorm(10,1))
+f <- gl(3, 10)
+f
+str(gl)
+?gl
+x
+split(x,f)
+lapply(split(x,f), mean)
+tapply(x)
+tapply(x,f)
+tapply(x,f, mean)
+library(datasets)
+head(airquality)
+s <- split(airquality, airquality$Month)
+s
+s$7
+names(s)
+lapply(s, function(x) colMeans(x[, c("Ozone", "Solar.R", "Wind")]))
+sapply(s, function(x) colMeans(x[, c("Ozone", "Solar.R", "Wind")]))
+x <- rnorm(10)
+f1 <- gl(2,5)
+f2 <- gl(5, 2)
+f1
+f2
+interaction(f1, f2)
+str(split(x, list(f1, f2)))
+x
+str(split(x, list(f1, f2), drop = T))
+message
+message("lol")
+message(">")
+message(">>")
+message(">>>")
+message(">>>>")
+message("<")
+message("<<")
+warning
+warning("")
+warning("!!!")
+warning("you suck!")
+warning("you suck!")
+error
+log(-1)
+log(0)
+printmessage <- function(x) {}
+printmessage <- function(x) {}
+printmessage <- function(x) {}
